@@ -1,0 +1,112 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* CSS Header & Nav */
+#main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background-color: #29223d;
+  z-index: 1;
+}
+
+#main-menu {
+  font-weight: 550;
+  display: flex;
+}
+
+#main-menu, .subnav {
+  list-style-type: none; 
+}
+
+#main-menu li {
+  position: relative;
+}
+
+#main-menu > li > a {
+  text-align: center; 
+  align-items: center;
+  color: #fff;
+  border-right: 1px solid #7c50bf; 
+}
+
+#main-menu li:last-child a {
+  border-right: none; 
+}
+
+#main-menu li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block; 
+}
+
+#main-menu li:hover .subnav {
+  display: block;
+} 
+
+#main-menu > li:hover > a {
+  background-color: #6f6290;
+}
+
+#main-menu .subnav li:hover a {
+  background-color: #574b78;
+  color: #fff;
+}
+
+#main-menu .subnav {
+  position: absolute;
+  display: none;
+  top: 100%; left: 0;
+  min-width: 180px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#main-menu .subnav a {
+  color: #a534b0;
+  padding: 0 24px; 
+  line-height: 38px;
+}
+
+/* CSS - Content */
+
+.content .tiltle1 {
+  padding-top: 65px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  font-weight: 550;
+}
+
+.content .tiltle2 {
+  padding-left: 15px;
+}
+
+/* CSS - Content - Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
